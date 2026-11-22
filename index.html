@@ -8,8 +8,8 @@
   <title>DEIC - Polícia Civil | Brasil Roleplay</title>
 
   <!-- Favicon e Ícones PWA -->
-  <link rel="icon" type="image/jpeg" href="./logodeic-circle.jpg">
-  <link rel="apple-touch-icon" href="./logodeic-circle.jpg">
+  <link rel="icon" type="image/png" href="./deic-icon-v3.png">
+  <link rel="apple-touch-icon" href="./deic-icon-v3.png">
   <link rel="manifest" href="./manifest.json">
   <meta name="theme-color" content="#020617">
 
@@ -78,9 +78,17 @@
       }
     }
 
-    .animate-gradient-text {
-      background-size: 200% auto;
-      animation: gradientMove 3s linear infinite;
+    .deic-title-gradient {
+      color: #c9e3ff;
+      background: linear-gradient(105deg, #76a6df 5%, #c9e3ff 29%, #e3eaf3 53%, #dbc79b 72%, #8cb7e9 96%);
+      background-size: 235% 100%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradientMove 12s ease-in-out infinite;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .deic-title-gradient { animation: none; background-position: 45% 50%; }
     }
 
     /* Scroll Animations */
@@ -175,8 +183,8 @@
       animation-delay: 300ms;
     }
   </style>
-  <script type="module" crossorigin src="/DEIC-v2/index-Nw0nyT5I.js"></script>
-  <link rel="stylesheet" crossorigin href="/DEIC-v2/index-8nKqwv5O.css">
+  <script type="module" crossorigin src="/DEIC-v2/index-0_vqEtAk.js"></script>
+  <link rel="stylesheet" crossorigin href="/DEIC-v2/index-Dosii3DK.css">
 </head>
 
 <body>
